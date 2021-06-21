@@ -421,7 +421,7 @@ body {
   color: #1e1e1e
 }
 
-.gallery__inner {
+/* .gallery__inner {
   margin-bottom: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +432,14 @@ body {
 
 .gallery__inner img {
   display: block
+} */
+#gallery__inner .gallery .gallery-item {
+  margin: 0;
+}
+
+#gallery__inner .gallery .gallery-item img {
+  display: block;
+  border: none;
 }
 
 .footer {

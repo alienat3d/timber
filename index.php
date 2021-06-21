@@ -3,18 +3,10 @@
   <main class="main">
     <div class="container">
       <h3 class="main__title">
-        Строительство домов и бань из <br>
-        строганного и профилированного бруса
+        <?php the_field('main__title') ?>
       </h3>
       <p class="main__text">
-        За 10 лет мы возвели больше 250 домов и бань из бруса
-      </p>
-      <p class="main__text">
-        ИМЕЕМ БОЛЬШОЙ ОПЫТ В СТРОИТЕЛЬСТВЕ <br>
-        гарантируем качество и надежность всех построенных нами объектов
-      </p>
-      <p class="main__text">
-        <span>ГАРАНТИЯ НА ДОМА И БАНИ ИЗ БРУСА 3 ГОДА</span>
+        <?php the_field('main__text') ?>
       </p>
       <div class="decor-img">
         <img src="<?php bloginfo( 'template_url' ); ?>/assets/images/main-img.png" alt="декоративный элемент деревянная стружка">
@@ -108,8 +100,9 @@
         <p class="gallery__text">
           некоторые фотографии построенных нами домов и бань из бруса
         </p>
-        <div class="gallery__inner">
-          <a href="images/item-1.jpg" title="Проект №1"><img src="images/item-1.jpg" alt=""></a>
+        <div id="gallery__inner">
+        <?php the_field('gallery') ?>
+          <!-- <a href="images/item-1.jpg" title="Проект №1"><img src="images/item-1.jpg" alt=""></a>
           <a href="images/item-1.jpg" title="Проект №2"><img src="images/item-1.jpg" alt=""></a>
           <a href="images/item-1.jpg" title="Проект №3"><img src="images/item-1.jpg" alt=""></a>
           <a href="images/item-1.jpg" title="Проект №4"><img src="images/item-1.jpg" alt=""></a>
@@ -120,7 +113,7 @@
           <a href="images/item-1.jpg" title="Проект №9"><img src="images/item-1.jpg" alt=""></a>
           <a href="images/item-1.jpg" title="Проект №10"><img src="images/item-1.jpg" alt=""></a>
           <a href="images/item-1.jpg" title="Проект №11"><img src="images/item-1.jpg" alt=""></a>
-          <a href="images/item-1.jpg" title="Проект №12"><img src="images/item-1.jpg" alt=""></a>
+          <a href="images/item-1.jpg" title="Проект №12"><img src="images/item-1.jpg" alt=""></a> -->
         </div>
       </div>
       <div class="decor-img">

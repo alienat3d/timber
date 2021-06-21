@@ -15,18 +15,18 @@
 </head>
 
 <body>
-  <header class="header" style="background-image: url(images/background.jpg);">
+  <header class="header" style="background-image: url(<?php the_field('top__background') ?>);">
     <div class="header__inner">
       <img src="<?php bloginfo( 'template_url' ); ?>/assets/images/home.png" alt="логотип фирмы Timber House">
       <h1 class="header__name">
-        Timber House
+        <?php the_field('header__name') ?>
       </h1>
-      <a class="phone" href="tel:+75852772217">+7 (585) 277-22-17</a>
+      <a class="phone" href="tel:<?php the_field('phone') ?>"><?php the_field('phone') ?></a>
       <h2 class="header__title">
-        Дома из бруса под ключ
+        <?php the_field('header__title') ?>
       </h2>
       <div class="header__sale">
-        <img src="images/sale.png" alt="стикер акция">
+        <img src="<?php the_field('header__sale') ?>" alt="стикер акция">
       </div>
     </div>
   </header>
