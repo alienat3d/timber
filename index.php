@@ -17,7 +17,8 @@
           ПРОЕКТЫ ДОМОВ ИЗ БРУСА
         </h3>
         <div class="project__item">
-          <p class="project__name">
+          <?php the_field('project__item') ?>
+          <!-- <p class="project__name">
             ДОМ #1
           </p>
           <p class="project__size">
@@ -36,9 +37,9 @@
             <div class="project__image-item">
               <img src="images/project-1-scheme.jpg" alt="схема-план дома#1">
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="project__item">
+        <!-- <div class="project__item">
           <p class="project__name">
             ДОМ #2
           </p>
@@ -59,8 +60,8 @@
               <img src="images/project-2-scheme.jpg" alt="схема-план дома#2">
             </div>
           </div>
-        </div>
-        <div class="project__item">
+        </div> -->
+        <!-- <div class="project__item">
           <p class="project__name">
             ДОМ #3
           </p>
@@ -81,24 +82,24 @@
               <img src="images/project-3-scheme.jpg" alt="схема-план дома#3">
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="download">
       <img class="download__image" src="<?php bloginfo( 'template_url' ); ?>/assets/images/download.png" alt="">
       <div class="download__link-box">
-        <a class="download__link" href="#">
-          СКАЧАТЬ ВЕСЬ КАТАЛОГ ДОМОВ
+        <a class="download__link" href="<?php the_field('download__link') ?>" download>
+          скачать весь каталог домов
         </a>
       </div>
     </div>
     <div class="container">
       <div class="gallery">
         <h3 class="gallery__title">
-          ФОТОГРАФИИ НАШИХ РАБОТ
+          <?php the_field('gallery__title') ?>
         </h3>
         <p class="gallery__text">
-          некоторые фотографии построенных нами домов и бань из бруса
+          <?php the_field('gallery__text') ?>
         </p>
         <div id="gallery__inner">
         <?php the_field('gallery') ?>
