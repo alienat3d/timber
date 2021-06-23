@@ -73,9 +73,9 @@ h6 {
   margin: 0
 }
 
-p {
+/* p {
   margin: 0
-}
+} */
 
 html {
   line-height: 1.15;
@@ -281,7 +281,7 @@ body {
 }
 
 .decor-img {
-  margin: 45px 0 110px
+  margin: 45px 0;
 }
 
 .header {
@@ -462,7 +462,7 @@ body {
 
 .footer__mail {
   padding-top: 40px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   display: block;
   width: 100%;
   font-weight: 300;
@@ -474,4 +474,9 @@ body {
   display: inline-block;
   border-bottom: 1px solid #2f8bc5;
   padding-bottom: 2px;
+}
+
+/* === ADAPTIVE === */
+@media only screen and (min-width: 1280px) {
+
 }
