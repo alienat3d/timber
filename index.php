@@ -14,10 +14,44 @@
 
       <div class="project">
         <h3 class="project__title">
-          ПРОЕКТЫ ДОМОВ ИЗ БРУСА
+          <?php the_field( 'project__title' ); ?>
         </h3>
-        <div class="project__item">
-          <?php the_field('project__item') ?>
+<!-- === ACF script === -->
+  <?php 
+            
+    $featured_posts = get_field('project__item');
+    if( $featured_posts ): ?>
+      <ul>
+        <?php foreach( $featured_posts as $post ): 
+          setup_postdata($post); ?>
+            <li class="project__item">
+              <div class="project__name">
+                <?php the_field( 'project__name' ); ?>
+              </div>
+              <div class="project__size">
+                <?php the_field( 'project__size' ); ?>
+              </div>
+              <div class="project__area">
+                <?php the_field( 'project__area' ); ?>
+              </div>
+              <div class="project__price">
+                <?php the_field( 'project__price' ); ?>
+              </div>
+              <div class="project__image">
+                <div class="project__image-item">
+                  <img src="<?php the_field( 'project__image-photo' ); ?>" alt="фотография дома #1">
+                </div>
+                <div class="project__image-item">
+                  <img src="<?php the_field( 'project__image-scheme' ); ?>" alt="схема-план дома #1">
+                </div>
+              </div>
+            </li>
+        <?php endforeach; ?>
+      </ul>
+  <?php wp_reset_postdata(); ?>
+  <?php endif; ?>
+<!-- === / ACF script === -->
+
           <!-- <p class="project__name">
             ДОМ #1
           </p>
@@ -38,7 +72,6 @@
               <img src="images/project-1-scheme.jpg" alt="схема-план дома#1">
             </div>
           </div> -->
-        </div>
         <!-- <div class="project__item">
           <p class="project__name">
             ДОМ #2

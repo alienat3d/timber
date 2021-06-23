@@ -348,6 +348,12 @@ body {
   color: #000
 }
 
+.project ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .project__title {
   margin-bottom: 115px;
   font-weight: 700;
